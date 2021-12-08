@@ -114,12 +114,16 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 
+  transform: scale(1.1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -162,12 +166,16 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-contacts .link:hover,
 .item-contacts .link:focus {
   color: var(--accent-color);
 
+  transform: scale(1.1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -248,6 +256,9 @@ img {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   /* margin-right: 10px; */
+
+  transform: scale(0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item:not(:last-child) {
@@ -258,6 +269,7 @@ img {
 .link-footer:focus {
   background-color: var(--accent-color);
 
+  transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -292,11 +304,15 @@ img {
 
 .address .mail,
 .address .phone {
+  display: inline-block;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .mail {
-  display: inline-block;
   margin-bottom: 9px;
 }
 
@@ -304,6 +320,7 @@ img {
 .address .mail:focus {
   color: var(--accent-color);
 
+  transform: scale(1.1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -311,12 +328,8 @@ img {
 .address .phone:focus {
   color: var(--accent-color);
 
+  transform: scale(1.1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address .mail,
-.address .phone {
-  text-decoration: none;
 }
 
 /* ============== Hero ============== */
@@ -342,7 +355,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  /* background-color: var(--bcg-main-color); */
+  background-color: var(--bcg-main-color);
 }
 
 .hero-title {
@@ -556,6 +569,9 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transform: scale(0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:last-child {
@@ -569,15 +585,13 @@ img {
 .link-icon:focus,
 .link-icon:hover {
   background-color: var(--accent-color);
-
+  transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon:focus .icon,
 .link-icon:hover .icon {
   fill: var(--primary-white-color);
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =========== Our regular clients =========== */
@@ -627,12 +641,16 @@ img {
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transform: translate(0%, 0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon:hover,
 .client-icon:focus {
   border-color: var(--accent-color);
 
+  transform: translate(2%, 2%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -640,6 +658,7 @@ img {
 .client-icon:focus .client {
   fill: var(--accent-color);
 
+  transform: translate(2%, 2%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -662,14 +681,6 @@ img {
   margin-left: 8px;
 }
 
-.btn-filter:hover,
-.btn-filter:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .btn-filter {
   padding: 6px 22px;
   background: var(--bcg-secondary);
@@ -684,6 +695,20 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  transform: scale(1.1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =========== Portfolio section =========== */
